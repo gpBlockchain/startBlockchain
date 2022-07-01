@@ -1,0 +1,67 @@
+{
+  "config": {
+    "chainId": 81888,
+    "homesteadBlock": 0,
+    "daoForkBlock": 0,
+    "daoForkSupport": true,
+    "eip150Block": 0,
+    "eip155Block": 0,
+    "eip158Block": 0,
+    "byzantiumBlock": 0,
+    "constantinopleBlock": 0,
+    "petersburgBlock": 0,
+    "ethash": {}
+  },
+  "nonce": "0x42",
+  "timestamp": "0x0",
+  "extraData": "0x11bbe8db4e347b4e8c937c1c8370e4b5ed33adb3db69cbdb7a38e1e50b1b82fa",
+  "gasLimit": "0xffffffff",
+  "difficulty": "0x1",
+  "alloc": {
+    "0c1efcca2bcb65a532274f3ef24c044ef4ab6d73": {
+      "balance": "0xffffffffffffffffffff"
+    },
+    "6DaF63D8411D6E23552658E3cFb48416A6A2CA78": {
+      "balance": "0xffffffffffffffffffff"
+    },
+    "934F1EbCB57ce1D9985A4c4f8811D17B04342067": {
+      "balance": "0xffffffffffffffffffff"
+    },
+    "C4A4281378FE711d2e02480Cb7568952EB249fdF": {
+      "balance": "0xffffffffffffffffffff"
+    },
+    "6B75801d17BcB7dbA0bDfE1d989e49A722e020e6": {
+      "balance": "0xffffffffffffffffffff"
+    },
+    "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266": {
+      "balance": "0xffffffffffffffffffff"
+    },
+    "0x70997970C51812dc3A010C7d01b50e0d17dc79C8": {
+      "balance": "0xffffffffffffffffffff"
+    },
+    "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC": {
+      "balance": "0xffffffffffffffffffff"
+    },
+    "0x90F79bf6EB2c4f870365E785982E1f101E93b906": {
+      "balance": "0xffffffffffffffffffff"
+    },
+    "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65": {
+      "balance": "0xffffffffffffffffffff"
+    },
+    "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc": {
+      "balance": "0xffffffffffffffffffff"
+    },
+    "0x976EA74026E726554dB657fA54763abd0C3a0aa9": {
+      "balance": "0xffffffffffffffffffff"
+    },
+    "0x14dC79964da2C08b23698B3D3cc7Ca32193d9955": {
+      "balance": "0xffffffffffffffffffff"
+    },
+    "0x23618e81E3f5cdF7f54C3d65f7FBc0aBf5B21E8f": {
+      "balance": "0xffffffffffffffffffff"
+    },
+    "0xa0Ee7A142d267C1f36714E4a8F75612F20a79720": {
+      "balance": "0xffffffffffffffffffff"
+    }
+  }
+}
