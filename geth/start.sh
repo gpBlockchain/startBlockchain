@@ -1,5 +1,6 @@
 #  download geth
-
+# //https://github.com/ethereum/go-ethereum/blob/master/params/config.go#L339-L372
+# start geth with hard fork
 # prepare env
 geth --datadir  gethdata  init  gethdata/genesis.json
 
