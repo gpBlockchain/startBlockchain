@@ -12,3 +12,6 @@ sh status.sh
 ##### start eth node with hardfork 
 ###### step 
 1. mod genesis.json (more config: https://github.com/ethereum/go-ethereum/blob/master/params/config.go#L339-L372)
+
+## todo 
+provide docker file
