@@ -1,0 +1,1 @@
+pkill ckb-light-client
