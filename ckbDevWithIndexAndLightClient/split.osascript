@@ -1,0 +1,57 @@
+#! /usr/bin/osascript
+
+on run argv
+
+
+    set counter to 0
+    set argList to {}
+
+    repeat with arg in argv
+        if counter > 0 then
+            set end of argList to arg & " "
+        end if
+        set counter to counter + 1
+    end repeat
+
+    set argList to argList as text
+    set nid to (item 1 of argv) as number
+
+
+    tell application "iTerm"
+
+        if nid is equal to 1 then
+            create window with default profile
+
+            -- split top sessions to 3 panes
+            tell current session of current tab of current window
+                split horizontally with default profile
+                split vertically with default profile
+            end tell
+
+            -- split bottom session split vertically
+            tell session 3 of current tab of current window
+                split vertically with default profile
+            end tell
+        end if
+
+        -- execute commands
+        set theID to (item 1 of argv) as number
+
+        if theID <= 4 then
+            tell session theID of current tab of current window
+                write text argList
+            end tell
+        else
+            repeat with i from 2 to (theID - 3)
+                tell current window
+                    create tab with default profile
+                end tell
+            end repeat
+
+            tell session 1 of tab (theID - 3) of current window
+                write text "" & (item 2 of argv) & (item 3 of argv)
+            end tell
+        end if
+
+    end tell
+end run
