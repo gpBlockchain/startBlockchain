@@ -14,7 +14,7 @@ cat dev.log
 curl --location --request POST 'localhost:8114/' --header 'Content-Type: application/json' --data-raw '{  "jsonrpc":"2.0",  "method":"get_tip_header", "params":[],  "id":64}'
 echo "start ckb successful"
 cd ../../../
-sh timeout.sh 10 sh miner.sh
+bash timeout.sh 10 sh miner.sh
 
 cd ckb-indexer/target/release
 RUST_LOG=info ./ckb-indexer -s ckb-test > ckb-indexer.log 2>&1 &
