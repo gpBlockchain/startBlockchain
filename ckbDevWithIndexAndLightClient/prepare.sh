@@ -9,3 +9,4 @@ make build
 cd ../ckb-indexer
 cargo build --release
 cd ../ckb-light-client
+cargo build --release
