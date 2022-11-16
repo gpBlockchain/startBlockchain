@@ -1,5 +1,6 @@
 # startBlockchain
 One line command to start a blockchain node
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/gpBlockchain/startBlockchain)
 
 #### geth
 start eth  node 
