@@ -1,72 +1,23 @@
 version: '3.3'
 services:
-  light-client2:
+  light-client1:
     image: lumos/ckb-light-client-dev
     build: light-client
     ports:
       - '8112:9000'
     environment:
-      - ckb_host=18.162.235.225
+      - ckb_host=127.0.0.1
     restart: always
     networks:
       nn1:
         ipv4_address: 192.168.4.101
-
-  light-client3:
-    image: lumos/ckb-light-client-dev
-    build: light-client
-    ports:
-      - '8113:9000'
-    environment:
-      - ckb_host=18.162.235.225
-    restart: always
-    networks:
-      nn1:
-        ipv4_address: 192.168.4.102
-
-  light-client4:
-    image: lumos/ckb-light-client-dev
-    build: light-client
-    ports:
-      - '8114:9000'
-    environment:
-      - ckb_host=18.162.235.225
-    restart: always
-    networks:
-      nn1:
-        ipv4_address: 192.168.4.103
-
-  light-client5:
-    image: lumos/ckb-light-client-dev
-    build: light-client
-    ports:
-      - '8115:9000'
-    environment:
-      - ckb_host=18.162.235.225
-    restart: always
-    networks:
-      nn1:
-        ipv4_address: 192.168.4.105
-
-  light-client6:
-    image: lumos/ckb-light-client-dev
-    build: light-client
-    ports:
-      - '8116:9000'
-    environment:
-      - ckb_host=18.162.235.225
-    restart: always
-    networks:
-      nn1:
-        ipv4_address: 192.168.4.106
-
   light-client:
     image: lumos/ckb-light-client-dev
     build: light-client
     ports:
       - '8111:9000'
     environment:
-      - ckb_host=18.162.235.225
+      - ckb_host=127.0.0.1
     restart: always
     networks:
       nn:
