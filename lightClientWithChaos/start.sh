@@ -1,2 +1,2 @@
 echo "start docker"
-docker
+docker-compose up
