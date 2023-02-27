@@ -1,0 +1,1 @@
+echo " clean light client"

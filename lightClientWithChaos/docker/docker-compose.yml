@@ -1,0 +1,40 @@
+version: '3.3'
+services:
+  light-client2:
+    image: lumos/ckb-light-client-dev
+    build: light-client
+    ports:
+      - '8122:9000'
+    environment:
+      - ckb_host=192.168.3.100
+    restart: always
+    networks:
+      nn3:
+        ipv4_address: 192.168.5.101
+
+  light-client:
+    image: lumos/ckb-light-client-dev
+    build: light-client
+    ports:
+      - '8121:9000'
+    environment:
+      - ckb_host=192.168.3.100
+    restart: always
+    networks:
+      nn4:
+        ipv4_address: 192.168.6.101
+
+networks:
+  nn3:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.5.0/24
+  nn4:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.6.0/24
+

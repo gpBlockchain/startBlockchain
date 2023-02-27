@@ -1,0 +1,2 @@
+echo "start docker"
+docker
