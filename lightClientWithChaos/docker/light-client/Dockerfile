@@ -34,6 +34,6 @@ COPY --from=light-client-docker-builder \
 
 WORKDIR /home
 
-COPY config.toml ./dev.toml ./entrypoint.sh /home/
+COPY config.toml ./entrypoint.sh /home/
 
 ENTRYPOINT ["/home/entrypoint.sh"]
