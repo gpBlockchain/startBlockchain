@@ -15,7 +15,7 @@ services:
     image: lumos/ckb-light-client-dev
     build: light-client
     ports:
-      - '8122:9000'
+      - '8123:9000'
     environment:
       - ckb_host=18.162.180.86
     restart: always
