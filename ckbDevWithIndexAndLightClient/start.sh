@@ -14,15 +14,6 @@ cat dev.log
 curl --location --request POST 'localhost:8114/' --header 'Content-Type: application/json' --data-raw '{  "jsonrpc":"2.0",  "method":"get_tip_header", "params":[],  "id":64}'
 echo "start ckb successful"
 cd ../../../
-
-cd ckb-indexer/target/release
-RUST_LOG=info ./ckb-indexer -s ckb-test > ckb-indexer.log 2>&1 &
-sleep 3
-cat ckb-indexer.log
-
-curl --location --request POST 'localhost:8116/' --header 'Content-Type: application/json' --data-raw '{  "jsonrpc":"2.0",  "method":"get_tip", "params":[],  "id":64}' | jq -r '.result.address.node_id'
-echo "ckb indexer start successful"
-cd ../../../
 node_id=`curl http://localhost:8114/ -X POST -H "Content-Type: application/json" -d '{"jsonrpc": "2.0", "method":"local_node_info", "params": [], "id": 1}' | jq -r '.result.node_id'`
 echo "nodeId:"$node_id
 cp config.toml config.new.toml
