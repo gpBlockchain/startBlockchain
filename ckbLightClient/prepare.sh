@@ -1,5 +1,5 @@
-git clone https://github.com/nervosnetwork/ckb-light-client.git
+git clone https://github.com/Officeyutong/ckb-light-client.git
 cd ckb-light-client
-git checkout develop
-cargo build --release
+git checkout support-sqlite
+cargo build --release --no-default-features --features rusqlite
 cp ../config.toml target/release/
